@@ -1,6 +1,7 @@
-package com.in28.learnspring.game;
+package com.in28minutes.learnspringframework.game;
 
 public class GameRunner {
+
     private GamingConsole game;
 
     public GameRunner(GamingConsole game) {
@@ -8,10 +9,12 @@ public class GameRunner {
     }
 
     public void run() {
-        System.out.println("Running game : " + game);
+
+        System.out.println("game = " + game);
         game.up();
         game.down();
         game.left();
         game.right();
+
     }
 }
