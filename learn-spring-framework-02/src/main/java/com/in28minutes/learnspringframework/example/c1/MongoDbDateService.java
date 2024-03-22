@@ -1,13 +1,14 @@
 package com.in28minutes.learnspringframework.example.c1;
 
 import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+//@Component
 @Primary
-public class MongoDbDateService implements DataService{
+@Repository
+public class MongoDbDateService implements DataService {
     @Override
     public int[] retrieveDate() {
-        return new int[] {11, 22, 33, 44, 55};
+        return new int[]{11, 22, 33, 44, 55};
     }
 }
