@@ -1,4 +1,4 @@
-create table course
+create table courses
 (
     id int not null,
     name varchar(255) not null ,
