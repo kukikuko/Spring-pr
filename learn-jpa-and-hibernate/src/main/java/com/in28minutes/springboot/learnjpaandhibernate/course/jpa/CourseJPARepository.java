@@ -1,6 +1,6 @@
-package com.in28minutes.springboot.learnjpaandhibernate.couse.jpa;
+package com.in28minutes.springboot.learnjpaandhibernate.course.jpa;
 
-import com.in28minutes.springboot.learnjpaandhibernate.couse.Course;
+import com.in28minutes.springboot.learnjpaandhibernate.course.Course;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
