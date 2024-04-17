@@ -15,6 +15,12 @@ public class FP01exercises {
         courses.stream()
                 .filter(course -> course.length() >= 4)
                 .forEach(System.out::println);
+
+        printSquaresOfOddNumbersInListFunctional(numbers);
+
+        courses.stream()
+                .map(course -> course.length())
+                .forEach(System.out::println);
     }
 
     private static boolean isOdd(int number) {
@@ -25,6 +31,13 @@ public class FP01exercises {
         numbers.stream()
 //                .filter(FP01functional::isOdd) 
                 .filter(number -> number % 2 != 0)//Lambda expression
+                .forEach(System.out::println); //Method reference
+    }
+
+    private static void printSquaresOfOddNumbersInListFunctional(List<Integer> numbers) {
+        numbers.stream()
+                .filter(number -> number % 2 != 0)//Lambda expression
+                .map(number -> number * number * number)
                 .forEach(System.out::println); //Method reference
     }
 }
